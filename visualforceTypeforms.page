@@ -1,0 +1,13 @@
+<apex:page standardController="Account" extensions="controllerVisualforceTypeforms" >
+   <apex:pageBlock title="Hello {!$User.FirstName}!">
+      You are viewing the typeforms of the account {!account.name} .
+   </apex:pageBlock>
+   <apex:pageBlock title="Typeforms">
+      <apex:pageBlockTable value="{!types}" var="type">
+         <apex:column value="{!type.name}"/>
+         <apex:column value="{!type.Answer__c}"/>
+      </apex:pageBlockTable>
+       
+
+   </apex:pageBlock>
+</apex:page>

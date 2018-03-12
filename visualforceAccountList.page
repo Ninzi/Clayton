@@ -1,0 +1,13 @@
+<apex:page controller="controllerVisualforceAccount"  >
+    <apex:pageBlock title="Accounts">
+        <apex:pageBlockTable value="{!Accounts}" var="a">
+             <apex:column headervalue="{!a.Name}">
+       			<li>
+                    <apex:outputLink value="https://ap1.salesforce.com/apex/visualforceTypeforms?id={!a.id}" >
+                    	<apex:outputText value="{!a.Name}"/>
+                	</apex:outputLink>
+            	</li>
+            </apex:column>
+    	</apex:pageBlockTable>
+    </apex:pageblock>
+</apex:page>
